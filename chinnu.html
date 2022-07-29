@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elan and Nvision</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Rampart+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Monoton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/93e42e82bc.js" crossorigin="anonymous"></script>
+
+
+  <style>
+  
+  .name img{
+    width: 1519px;
+    height: 700px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.75;
+  
+  }
+    .left{
+
+display: inline-block;
+position: fixed;
+top: 0px;  
+left: 0px;  
+}
+.left img{
+  width: 100px;
+  height: 90px;
+}
+    .mid{
+
+
+width: 40%;
+display: block;
+margin: -6px auto;
+    }
+    .right{
+
+      display: inline-block;
+    position: absolute;
+    right: 24px;
+    top: 30px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+width: 80px;
+height: 30px;
+background-color: black;
+border-radius: 28px;
+text-align: center;
+align-items: center;
+position: fixed;
+  }
+  .mark a{
+    position: fixed;
+    right: 34px;
+    top: 28px;
+    color: brown  ;
+    z-index: 5;
+    font-size: 30px;
+  
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 50px;
+     
+  }
+  .mark a:hover,.mark a:active{
+    color: black;
+  }
+  .right a{
+    color: white;
+    text-decoration: none;
+   
+  }
+
+  .right a:hover, .right a:active{
+    color: rgb(2, 245, 2);
+  }
+  .ani{
+    font-family: 'Rampart One', cursive;
+    position: absolute;
+    right: 152px;
+    top: -8px;
+    color: #01f501;
+    font-weight: bolder;
+    background-color: black;
+    height: 50px;
+   
+  }
+  .navbar{
+ position: fixed;
+    display: inline-block;
+    background-color:  #0000008a;
+    border-radius: 25px;
+    padding: 15px;
+  }  
+  .navbar ul{
+    overflow: auto;
+  
+  }
+  .navbar li{
+  
+    display: inline-block;
+  }
+  .navbar li a{
+
+    color: white;
+    padding: 18px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .navbar li a:hover, .navbar li a:active{
+    color: aqua;
+    text-decoration: underline;
+   width: 10%;
+    
+    height: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  
+  }
+  .container{
+
+    width: 60%;
+    position: absolute; 
+    top:450px;
+    left: 390px;
+    text-align: center;
+    font-family: 'Rampart One', cursive; 
+    /* font-family: 'Frijole', cursive;  */
+    font-size: 35px;
+    color: rgb(229, 236, 230);
+    font-weight: bold;
+  }
+  .second img{
+    width: 100%;
+    position: absolute;
+    top: 700px;
+    left:0px;
+  }
+  #sec{
+   
+    width: 50%;
+    color:  rgb(0 0 0);
+    font-size: 32px;
+    /* font-family: 'Frijole', cursive; */
+    /* font-family: 'Rampart One', cursive; */
+    font-family: 'Kaushan Script', cursive;
+    position: absolute;
+    top: 740px;
+    left: 20px;
+    font-weight: bold;
+  }
+  .third img{
+    width: 40%;
+    position: absolute;
+    top: 700px;
+    right: 0px;
+  }
+  /*.elan{
+    text-align: center;
+    /* font-family: 'Frijole', cursive; */
+    /* font-family: 'Rampart One', cursive; */
+   /* font-family: 'Monoton', cursive;
+    font-size: 100px;
+    margin: auto;
+    width: 50%;
+    color:  rgb(0 0 0);
+    position: absolute;
+    top:150px;
+    left: 400px;
+    font-weight: bold;
+  }*/
+
+  .elan{
+    position: absolute;
+    top:150px;
+    left: 530px;
+    text-align: center;
+    font-family: 'Frijole', cursive;
+    background: linear-gradient(90deg, black, red, purple, black, green, black);
+    font-size: 100px;
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animatu 10s linear infinite;
+  }
+  @keyframes animatu{
+   0%{
+    background-position: 0%;
+   }
+   100%{
+    background-position: 400%;
+   }
+  }
+  .fourth img{
+
+    width: 100%;
+    position: absolute;
+    top: 1950px;
+    right: 0px;
+
+  }
+  .fifth img{
+  
+    width: 45%;
+    position: absolute;
+    top: 720px;
+    right: 0px;
+    
+        animation-name: naam1;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: alternate;
+  }
+  @keyframes naam1{
+     0%{
+        top: 1000px;
+        right: 0px;
+     }
+     100%{
+        top: 720px;
+        right: 0px;
+     }
+    }
+  .sixth img{
+  
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 1150px;
+ left: 10px;
+ 
+        animation-name: naam2;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: alternate;
+}
+@keyframes naam2{
+     0%{
+        top: 1250px;
+        left: 0px;
+     }
+     100%{
+        top: 1150px;
+        left: 0px;
+     }
+    }
+
+.aboutus{
+  display: flex;
+    border: 2px red;
+    font-family: 'Bungee', cursive;
+    position: absolute;
+    top: 1113px;
+    right: 306px;
+    color: #0e6a52;
+    font-size: 44px;
+
+    animation-name: naam3;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: alternate;
+    
+  
+}
+@keyframes naam3{
+     0%{
+        top: 1213px;
+        right: 306px;
+     }
+     100%{
+        top: 1113px;
+        left: 306px;
+     }
+    }
+.abtus{
+  width: 50%;
+  height: 40%;
+  color: black;
+   font-family: 'Carter One', cursive;;
+  border: 2px yellow;
+  position: absolute;
+  top: 1225px;
+  right: 42px;
+  align-items: flex-end;
+  font-size: 25px;
+  
+  animation-name: naam4;
+  animation-delay: 2s;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: alternate;
+}
+
+@keyframes naam4{
+     0%{
+        top: 1325px;
+        right: 42px;
+     }
+     100%{
+        top: 1225px;
+        right: 42px;
+     }
+    }
+.event{
+font-size: 113px;
+font-family: 'Frijole', cursive; 
+color: green;
+position: absolute;
+top: 2375px;
+left: 450px;
+text-align: center;
+font-weight: bold;
+background: linear-gradient(90deg, black, red, purple, black, green, black);
+
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animatu 10s linear infinite;
+}
+
+.hello{
+  position: absolute;
+  top: 3080px;
+  left: 00px;
+  width: 100%;
+  height: 100px;
+}
+
+ .blog{
+  background: linear-gradient(to right, #2c5364, #0f2027);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 800px;
+} 
+ 
+ 
+
+ .box{
+  position: relative;
+  
+  width: 225px;
+  height: 148px;
+  transform-style: preserve-3d;
+  animation: rotate 40s linear infinite;
+  border-radius: 10px;
+}
+@keyframes rotate{
+  0%{
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100%{
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+.box span{
+  position: absolute;
+ top: 0px;
+ left: 0;
+  width: 100%;
+ height: 100%; 
+ transform-origin: center;
+ transform-style: preserve-3d;
+ transform: rotateY(calc(var(--i)*45deg)) translateZ(500px);
+-webkit-box-reflect: below 0px linear-gradient(transparent,transparent #027602);
+
+}
+.box span:hover img{
+  transform: translate(-20px) scale(1.5);
+}
+.box span img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+   width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  transition: 5s;
+}
+ .sponsor{
+  position: absolute;
+  
+  text-align: center;
+  top: 3107px;
+    left: 412px;
+    font-size: 113px;
+  font-family: 'Alfa Slab One', cursive;
+  background: linear-gradient(90deg, white, red, purple, white, green, white);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animata 10s linear infinite;
+ }
+ @keyframes animata{
+   0%{
+    background-position: 0%;
+   }
+   100%{
+    background-position: 400%;
+   }
+  }
+ /*
+ .elan{
+    position: absolute;
+    top:150px;
+    left: 530px;
+    text-align: center;
+    font-family: 'Frijole', cursive;
+    background: linear-gradient(90deg, black, red, purple, black, green, black);
+    font-size: 100px;
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animatu 10s linear infinite;
+  }
+ */
+.status{
+  width: 50%;
+
+position: absolute;
+top: 1630px;
+left: 300px;
+
+}
+.main{
+  width: 100%;
+font-size: 30px;
+font-family: 'Ubuntu', sans-serif;
+color: white;
+padding: 10px;
+position: absolute;
+top: 80px;
+left: 80px;
+}
+.maain{
+font-size: 52px;
+font-family: 'Carter One', cursive;
+color: yellow;
+}
+.man{
+  width: 100%;
+font-size:30px ;
+font-family: 'Ubuntu', sans-serif;
+color: white;
+position: absolute;
+top: 96px;
+left: 70px;
+}
+.maan{
+font-size: 52px;
+font-family: 'Carter One', cursive;
+color: yellow;
+}
+.image img{
+  position: absolute;
+  top:1550px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+}
+.reach{
+  display: block;
+width: 30%;
+position: absolute;
+top: 1630px;
+left: 850px;
+
+}
+.back img{
+  width: 100%;
+  height: 280px;
+  position: absolute;
+  top: 3800px;
+  left: 0px;
+} 
+ .face a{
+  color: blue;
+  position: absolute;
+  font-size: 28px;
+  top: 3900px;
+  right: 380px;
+  text-decoration: none;
+ }
+ .twit a{
+  color: blue;
+  position: absolute;
+  font-size: 28px;
+  top: 3900px;
+  right: 320px;
+  text-decoration: none;
+ }
+ .insta a{
+  color: purple;
+  position: absolute;
+  font-size: 28px;
+  top: 3900px;
+  right: 270px;
+  text-decoration: none;
+ }
+ .you a{
+  color: red;
+  position: absolute;
+  font-size: 28px;
+  top: 3940px;
+  text-decoration: none;
+   right: 350px;
+ }
+ .linked a{
+  color: blue;
+  position: absolute;
+  font-size: 28px;
+  top: 3940px;
+  right: 300px;
+  text-decoration: none;
+ }
+ .email{
+  color: red;
+  position: absolute;
+  font-size: 25px;
+  top: 3920px;
+  right: 850px;
+  text-decoration: none;
+ }
+  .house{
+    color: red;
+  position: absolute;
+  font-size: 25px;
+  top: 3890px;
+  right: 850px;
+  text-decoration: none;
+  }
+  .phone{
+    color: red;
+  position: absolute;
+  font-size: 25px;
+  top: 3950px;
+  right: 850px;
+  text-decoration: none;
+  }
+  .phone1{
+    color: red;
+  position: absolute;
+  font-size: 25px;
+  top:3980px;
+  right: 850px;
+  text-decoration: none;
+  }
+ .follow li i{
+  text-decoration: none;
+  padding: 200px;
+ }
+ .follow ul{
+  overflow: auto;
+  text-decoration: none;
+ }
+ .contact{
+  font-size: 25px;
+
+  font-family: 'Sen', sans-serif;
+  position: absolute;
+  display: flex;
+ }
+ .contact a{
+  width: 500px;
+  position: absolute;
+  top: 3910px;
+  left: 670px;
+  font-size: 25px;
+
+ }
+ .web{
+  width: 500px;
+  position: absolute;
+  top: 3860px;
+  left: 670px;
+  font-size: 25px;
+  color: white;
+ }
+ .team{
+  width: 500px;
+  position: absolute;
+  top: 3920px;
+  left: 670px;
+  font-size: 25px;
+  color: white;
+ }
+ .cont{
+  width: 500px;
+  position: absolute;
+  top: 3800px;
+  left: 740px;
+  font-size: 35px;
+  color: yellow;
+ }
+ .followus{
+  width: 10%;
+  font-weight: bold;
+  position: absolute;
+  top: 3850px;
+  right: 240px;
+  font-size: 25px;
+ }
+  .footer img{
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 3800px;
+    left: 0px;
+  }
+  .my img{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height: 90px;
+  }
+</style>
+</head>
+<body>
+  <div class="name">
+    <img src="https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662__340.jpg" alt="">
+  </div>
+
+ <header class="header">
+ 
+  
+  
+ 
+ </header>
+ <div class="container">
+  THE GRANDEST TECHO-CULTURAL FIESTA IN AP & TELANGANA
+ </div> 
+ <div class="second">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgi2X1cU_ZbI_gVJzhIruLBEOPXeErl0hUuA&usqp=CAU" alt="">
+  <p id="sec">
+    Elan and ηVision is the annual techno-cultural fest of IIT Hyderabad and is one of the largest fests in South India. Elan refers to the cultural part and &eta;Vision cites the technological part of fest. This fest boasts of several professional and semi-professional crowd pulling events and promises to be a grand event that exhibits the best of cultural performances, technical solutions, and advances from the student community.
+  </p>
+ </div>
+ <!-- <div class="third">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR826LENZBZYwHXgD46Nr7ox3vgXy6ViAzhoQ&usqp=CAU" alt="">
+ </div> -->
+ 
+ <div class="fourth">
+  <img src="https://lh3.googleusercontent.com/8zDavOFglYlfUQDblPU9qcHAzkxt1mv3cuxVhdNXYLeHuaYxKjsOSPDGplyX91aTzLL4uIRtgpM2Wwr91OJVYIxpPH98scz2YWbmenD7NwnH2c2adtgtqGbrsOnq9KCTnTh_13yxmwbJLU2ypzCTLbUPyLQEOroeZNh04lRXAh4tDGhTKVfHsic-wS9oxr48QRMUkBuDSgN9xkpof02DgnTKp8CCs5_iNqlQO7jjGgYicPc-oK0A8LZgJ92uPAOn7YY9G2AQvZ815BSBApLKF-JvPTrkhx2s9-zk8Yone1jnhdSofEsTyrYQKIdsgpC69q4OVyGSrVIOeM_n85P1-PGbbLhJWwqSNCg0U4wzqiAayJPKZ8pmVMK8u28sll8cC0XOs9CBBDTeL7YsP-u_1aTf7vmXLhiDCyEbS1FjhMxK-EKv6PHK9FqTqybFN97o8-bAVf09gRkb5Jx1HKbbjPGDRNsYzvFOCAlwo5111IbyiRlFIguEQnuQ9gmJ-LN4cv7zaQj5abpKDtzhm6vHmOqnRlIPfbXTbINOBXiCbCL_RUL38rdRbFx_YW5ewQrlMpmWgrZKyrCRSdo8XD5qrCHkhJCdTB0BtOu67fMaFieVu60EU8p8AfzluTpv9gyrgSKndHboygBVPQ1rAZO4qtAKpHMk7dLUE8gsxT2HbCieyeY7EjhPOr2JT6M9PDmXMD7eTsnDa8qgEvLA1elpHwJpXT2hNB4cRrqBbeFXwUsMBM2ZovL6vjMd5WQ=w1160-h870-no?authuser=0" alt="">
+ </div>
+
+ <div class="fifth">
+  <img src="https://lh3.googleusercontent.com/gWk3d8V2sMvE_yhcEMqYt3rtAFlwQQn_OmeMJtlJeXu7dZ8gVSCgRwZ7whJFSapqM8ypkWp49nNJXCbZeByLeQKRdWwcUHpnzMhhJ7HMYqNR6sEmSkWMdBXardhi0CAjtEtqTIvtvNWW8NajkmqUH9-A5kmd-vwfFc_QRBKQiWciCiYawxM_YnqdPz_g3W6iZvH2oqQ4Rqz7GYSf5ZtgXmNsTg0MWmfrlCJRgsH9G3CLN_gcdUIl2wRUFat-nmoGJR8rb-tTWaARC1Zs-7_wlSljVbuAOORA1AjB_LsDMmB8hTtsmBLRcdSjt4tapM0LH9zHrsFandt-Tg187oHv9JnbhaG4PwQtqO6FZc8FFvdzQz1TyelwRjDrUUKSDNj5dGpwAs7uT-86ctI4lcYe6aR0iMJdIotDKiVc_ItNfCgaSTHPTAdsPiLb4EfPgtync014E4FKSYFuWhwoCGlyyOfkjtunkMsRGtuRZN_wSaTOg9YSRtEFJ4r1CTzDGD5g5LxjGMUOwY6S8JHeuYsldcl_sDhV9lYpLjmsVevuW9rvIbXEBoMRD-qW_mN7SAXGxil32Glp7kk2nNDyg264D9lOmrl8cLR5GNeiHLGBnjUp_J2H-xVyDMcqsWuApcfzlMQNVy73VLluF_F5S5GIhQnU57oIjTtSYl8Fk-D0QW86RZ-gxjwQROWBP4-Z80GJ5ZhW2HJk8-sLkPUB4aOocVpg_j4ZPREyGJqtKde6EHcpAiuZMpjTzUVGeaY=w1555-h943-no?authuser=0" alt="">
+ </div>
+ <div class="sixth">
+  <img src="https://lh3.googleusercontent.com/uHj7sbYVDwB_-fGvmBOW2mYQQXmvbDvURfh5W2JEkecp68vs4VGjBr4nt5j7-PE9m9c-OSgmw8Rz5mr24f0GCwp7S-jSuYEuXcjggWhQ4FqP-OcpCLj3xRfEg0eI3hb7PDn9bsbGamnsskL_Q3_xDuOtfg5RTqrDGbXcqlv_pMC0EzckVajyrXe7mEoeqWh0l13cwIGl15uVGo0hcic-NNHEYF1v1O0QV1QrwwtQVyp6DxctoSk_21zrTwaNQrQ15fw9l6qWTJBKlBV_tyXYNS0Dsh3xHjrIzNQpJBlRSlbrIHwlXkPMI-lXUS5dHFsVppFVLdTBzdnetUqqXuWyO2qhyPES4QWGL4iUwFDhr6qjaqC9YIwxnK-njx9hn556uJ2hq-iC2pVf6N8oKWrI1E6lS1iwOrUFlm9X4XDwPBVeW76S_qDRby7r2Dhgs0_6xW44SJxufSpSC7SMlVpz6ik0uZJsQLcVbmyh5SF16aipP_zlEKHBfZJ9C70IagMMwvO3lCc-gEMa_rrVAcROBH_Yk_YhD7BSRsf0sYA1jvvo_jWuccw6ZoSA4b-oElRXntL4eY_DBq-rO2S2LhTeYhJDc_iESPiLJkr3L5EAXxgtHEYxRCXJgLRZUgT8F7N4DeTzL2lk8KV8kQBWQHXONkqlXhRpK8cym1Z-MnnuWKYdkrkuDTlBeWlosXVf9IKrE2QaeQln2neir-zw49Ofo_ev9vhGuwGRqjE447wp0-5gVJkyGzGMz-PImDs=w779-h664-no?authuser=0" alt="">
+ </div>
+ 
+ <div class="elan">
+  Elan <br> Nvision
+ </div>
+ <div class="Aboutus">
+  <h1 class="aboutus">About us</h1>
+  <p class="abtus">
+    This fest is held in the campus of IIT Hyderabad and is completely organised by the students. Students of IITH amalgamate into a team and put all their efforts into organising this fest. Each domain of this organisation has its own motive and all of them collectively organise this fantabulous fest.
+  </p>
+ </div>
+<div class="event">
+  OUR <br>EVENTS
+</div>
+<div class="hello">
+<div class="blog">
+  <div class="box">
+    <span style="--i:1;"><img src="Larsen.jpg" width="309px" height="209px" alt=""></span>
+    <span style="--i:2;"><img src="Airmeet.jpg"width="309px" height="209px" alt=""></span>
+    <span style="--i:3;"><img src="NPTC.jpg" width="309px" height="209px" alt=""></span>
+    <span style="--i:4;"><img src="Sbi.jpg"width="309px" height="209px" alt=""></span>
+    <span style="--i:5;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzWMGjpS8F3-UU5dQJtWFauVcuexgK4p-_Fw&usqp=CAU"width="309px" height="209px" alt=""></span>
+    <span style="--i:6;"><img src="https://batteryindustry.tech/wp-content/uploads/2022/01/honeywell-logoood.jpg" width="309px" height="209px"alt=""></span>
+    <span style="--i:7;"><img src="Life.png"width="309px" height="209px" alt=""></span>
+    <span style="--i:8;"><img src="union.png"width="309px" height="209px" alt=""></span>
+  </div>
+  </div>
+</div>
+<div class="sponsor">
+  Our sponsors
+</div>
+<div class="image">
+  <img src="https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash.jpg" alt="">
+</div>
+ <div class="status">
+  
+  <h1 class="maain">General status</h1>
+  <p class="main">
+    13th Edition <br>
+    40+ Events <br>
+    250+ Colleges <br>
+    10k+ Audience
+  </p>
+</div>
+ <div class="reach">
+  <h1 class="maan">Online Outreach</h1>
+  <p class="man">
+    Facebook: 42,000+likes <br>
+    Instagram: 2700+Followers <br>
+    Twitter: 1000+Followers <br>
+    Youtube: 72,000+views
+  </p>
+</div> 
+ <div class="back">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQ9AyNYrS_KkAItr__nCQNRG76cHkI3z1iA&usqp=CAU" alt="">
+</div> 
+<div class="contact">
+  <h1 class="cont">Contact us</h1>
+  <p class="web">Elan & &eta;vision Web Team</p> 
+  <a href="">elan@iith.ac.in</a>
+  <p class="team">
+    Phone: +91 79952 04145 <br>
+    Phone: +91 93261 68076 <br>
+  </p>
+  
+</div>
+<div class="followus">
+  Follow us
+</div>
+<div class="follow">
+  
+    <div class="face"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
+    <div class="twit"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+    <div class="insta"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+   
+    <div class="you"><a href=""><i class="fa-brands fa-youtube"></i></a></div>
+    <div class="linked"><a href=""><i class="fa-brands fa-linkedin"></i></a></div>
+    <div class="email"><i class="fa-solid fa-envelope"></i></div>
+    <div class="house"><i class="fa-solid fa-house"></i></div>
+    <div class="phone"><i class="fa-solid fa-phone"></i></div>
+    <div class="phone1"><i class="fa-solid fa-phone"></i></div>
+   
+</div>
+<div class="footer">
+  <img src="elaan.jpg" alt="">
+</div>
+<div class="my">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg" alt="">
+</div>
+<div class="left">
+  <!-- for logo -->
+
+<img src="https://media-exp2.licdn.com/dms/image/C560BAQF4UEjwj3bTFQ/company-logo_200_200/0/1615887300369?e=2147483647&v=beta&t=UmeSq8crb5N_sHbRXX87Ur-CgSzSrZlBCiAfFegxCUU" alt="">
+
+</div>
+<div class="mark"> <a href=""><i class="fa-solid fa-question"></i></a></div>
+<div class="mid">
+  <!-- for navigation bar -->
+ <ul class="navbar">
+  <li><a href="">Home</a></li>
+  <li><a href="">Events</a></li>
+  <li><a href="">Sponsors</a></li>
+  <li><a href="">Workshops</a></li>
+  <li><a href="">CA Portal</a></li>
+  <li><a href="">Teams and Domains</a></li>
+ </ul>
+</div>
+<div class="right"><a href="">
+  <!-- for buttons or search -->
+
+</a>
+</div>
+
+</body>
+</html>
+
+
+
